@@ -30,6 +30,18 @@
     }
 ?>
 
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=254311618073113&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -46,6 +58,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+				<li <?php echo $home_class?>><a href=<?php echo $HOME ?>>Home</a></li>
 				<li <?php echo $about_class?>><a href=<?php echo $HOME."about.php" ?>>About</a></li>
 				<li <?php echo $services_class?>><a href=<?php echo $HOME."services.php" ?>>Services</a></li>
 				<li <?php echo $appointment_class?>><a href=<?php echo $HOME."appointment.php" ?>>Book an Appointment</a></li>

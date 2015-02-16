@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-	$MY_TITLE="Jae Seok Lee's Webpage - Home";
-	include 'head.php';
-?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jae Lee's Webpage</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
 
 <body>
 
 	<?php
 		$HR_ACTIVE="HOME";
-		include 'navbar.php';
+		include 'header.php';
 	?>
 
-	<div class="row">
-		<div class="col-md-12">
-			<center>
-				<br><br><br>
-			</center>
-		</div>
-	</div>
 	<div class="row">
 	    <div class="col-md-1"></div>
 	    <div class="col-md-5">
@@ -51,7 +56,7 @@
 	    <div class="col-md-5">
 			<center>
 				<a data-toggle="collapse" href="#collapseMassage" aria-expanded="false" aria-controls="collapseMassage">		
-					<img src="img/massage.jpg" class="img-responsive img-rounded" alt="Responsive image">
+					<img src="img/massage.jpg" class="img-responsive" alt="Responsive image">
 					<h3>Massage Therapy</h3>
 				</a>
 				<div class="collapse" id="collapseMassage">
@@ -71,13 +76,6 @@
 	</div>
 	
 	<br>
-	<div class="row">
-		<div class="col-md-12">
-			<center>
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-			</center>
-		</div>
-	</div>
 
 	<div class="row">
 	    <div class="col-md-1"></div>
